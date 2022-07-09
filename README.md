@@ -62,18 +62,18 @@ echo $IP
 
 -----
 
-man nmap
+          man nmap
 
-####### -F : this is for a fast scan (scans fewer ports than the default scan.
-####### -sV : this probes open ports to determine the service/version info.
-####### -p- : this scans the entire 2^16 ports.
-####### -p{<port ranges>} : this scans only specified ports.
-####### 	e.g. -p22-24 or -p443 or -p U:53,111,137, T:21-25,80,139,8080,S:9
-####### 			where U reps UDP and T reps TCP
-####### --min-rate [<number>] : sends packets no slower than <number> per second.
-####### -A : enables the detection, version detection, script scanning, and traceroute.
-####### -oN : used to create a file of the results from the scan. It is applied after the IP address.
-####### -sC : Performs a script scan using the default set of scripts. It requires sudo permission, this is because it is viewed as intrusive.
+###### -F : this is for a fast scan (scans fewer ports than the default scan.
+###### -sV : this probes open ports to determine the service/version info.
+###### -p- : this scans the entire 2^16 ports.
+###### -p{<port ranges>} : this scans only specified ports.
+###### 	e.g. -p22-24 or -p443 or -p U:53,111,137, T:21-25,80,139,8080,S:9
+###### 			where U reps UDP and T reps TCP
+###### --min-rate [<number>] : sends packets no slower than <number> per second.
+###### -A : enables the detection, version detection, script scanning, and traceroute.
+###### -oN : used to create a file of the results from the scan. It is applied after the IP address.
+###### -sC : Performs a script scan using the default set of scripts. It requires sudo permission, this is because it is viewed as intrusive.
 
           nmap -p- --min-rate 5000 -sV $IP -oN initial_scan 
 
@@ -95,24 +95,24 @@ Target:
             -login: root
 
 ###### :fire: root usually defines the super user (su), other names include:
-###### :fire:		 admininstrator
-###### :fire:		 admin.
+###### 		                         admininstrator.
+###### 		                            admin.
 
             root@Meow:~# ls
 
-####### :fire: ls : list things in the current directory.
-####### :fire: after the cmd we found the flag.txt, snap(dir)
-####### :fire: in other scenarios you might be looking for 
-#######			user.txt
-#######			root.txt
+###### :fire: ls : list things in the current directory.
+###### :fire: after the cmd we found the flag.txt, snap(dir)
+###### :fire: in other scenarios you might be looking for 
+######			            user.txt
+######			            root.txt
 
 
            root@Meow:~# help
 
-####### :fire: self explanatory.
+###### :fire: self explanatory.
 
            root@Meow:~# cat flag.txt
 
-####### :fire: looked into the contents of the file : :flag: b40abdfe23665f766f9c61ecba8a4c19. :flag:
+###### :fire: looked into the contents of the file : :flag: b40abdfe23665f766f9c61ecba8a4c19. :flag:
 
 ----
